@@ -6,5 +6,11 @@ Rails.application.routes.draw do
   namespace :api do
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
+
+    get "/listings" => "listings#index"
+    post "/listings" => "listings#create"
+    get "/listings/:id" => "listings#show"
+    patch "/listings/:id" => "listings#update"
+    delete "/listings/:id" => "listings#destroy"
   end
 end
