@@ -16,14 +16,12 @@ ActiveRecord::Schema.define(version: 2021_02_26_032508) do
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
-    t.integer "category_id"
     t.string "shoe_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "category_listings", force: :cascade do |t|
-    t.integer "category_listing_id"
     t.integer "category_id"
     t.integer "listing_id"
     t.datetime "created_at", precision: 6, null: false
@@ -31,7 +29,6 @@ ActiveRecord::Schema.define(version: 2021_02_26_032508) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.integer "image_id"
     t.integer "listing_id"
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
@@ -39,8 +36,6 @@ ActiveRecord::Schema.define(version: 2021_02_26_032508) do
   end
 
   create_table "listings", force: :cascade do |t|
-    t.integer "listing_id"
-    t.string "images"
     t.string "title"
     t.text "description"
     t.integer "user_id"
@@ -48,27 +43,24 @@ ActiveRecord::Schema.define(version: 2021_02_26_032508) do
     t.integer "quantity"
     t.boolean "availability"
     t.integer "location_id"
-    t.integer "brand_id"
+    t.integer "shoe_brand_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "locations", force: :cascade do |t|
-    t.integer "location_id"
     t.string "location_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "shoe_brands", force: :cascade do |t|
-    t.integer "brand_id"
-    t.string "brand"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.integer "user_id"
     t.string "first_name"
     t.string "last_name"
     t.string "email"

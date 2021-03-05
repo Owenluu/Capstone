@@ -1,6 +1,6 @@
 class Api::ListingsController < ApplicationController
   def index
-    @message = "hello!"
+    @listing = "hello"
     render "index.json.jb"
   end
 
