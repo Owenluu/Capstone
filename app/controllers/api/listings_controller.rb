@@ -21,8 +21,11 @@ class Api::ListingsController < ApplicationController
       location_id: params["location_id"],
       shoe_brand_id: params["shoe_brand_id"],
     )
-    @listing.save
-    render "show.json.jb"
+    if @listing.save
+      render "show.json.jb"
+    else
+      render json: { errors: @listing.errors.full_messages }, status: 422
+    end
   end
 
   def show
