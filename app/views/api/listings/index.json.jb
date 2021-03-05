@@ -1,3 +1,13 @@
-{
-  listing: @listing,
-}
+@listing.map do |listing|
+  {
+    id: listing.id,
+    title: listing.title,
+    description: listing.description,
+    user_id: listing.user_id,
+    price: listing.price,
+    quantity: listing.quantity,
+    availability: listing.availability,
+    location_id: listing.location_id,
+    shoe_brand_id: listing.shoe_brand_id,
+  }
+end
