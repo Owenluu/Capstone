@@ -20,9 +20,9 @@ ShoeBrand.create!(name: "Yeezy")
 ShoeBrand.create!(name: "New Balance")
 ShoeBrand.create!(name: "Reebok")
 
-Listing.create!(title: "Nike Dunk Low Off-White Pine Green", description: "Deadstock size 10", user_id: 1, price: 120, quantity: 1, availability: "true", location_id: 1, shoe_brand_id: 1)
-Listing.create!(title: "Air Jordan 4 Bred (2019)", description: "Deadstock size 9", user_id: 2, price: 900, quantity: 1, availability: "true", location_id: 2, shoe_brand_id: 3)
-Listing.create!(title: "Yeezy Slides Bone", description: "Deadstock size 11", user_id: 3, price: 350, quantity: 1, availability: "true", location_id: 3, shoe_brand_id: 4)
+Listing.create!(title: "Nike Dunk Low Off-White Pine Green", description: "Deadstock size 10", user_id: 1, price: 120, quantity: 1, availability: "true", location_id: 1, shoe_brand_id: 1, image: "https://stockx-360.imgix.net/Nike-Dunk-Low-Off-White-Pine-Green/Images/Nike-Dunk-Low-Off-White-Pine-Green/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606319825&w=1000")
+Listing.create!(title: "Air Jordan 4 Bred (2019)", description: "Deadstock size 9", user_id: 2, price: 900, quantity: 1, availability: "true", location_id: 2, shoe_brand_id: 3, image: "https://stockx-360.imgix.net/Air-Jordan-4-Retro-Bred-2019/Images/Air-Jordan-4-Retro-Bred-2019/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606316608&w=1000")
+Listing.create!(title: "Yeezy Slides Bone", description: "Deadstock size 11", user_id: 3, price: 350, quantity: 1, availability: "true", location_id: 3, shoe_brand_id: 4, image: "https://stockx-360.imgix.net/Yeezy-Slide-Bone/Images/Yeezy-Slide-Bone/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1608522495&w=1000")
 
 Category.create!(shoe_type: "Athletic")
 Category.create!(shoe_type: "Running")
