@@ -9,5 +9,6 @@
     availability: listing.availability,
     location_id: listing.location_id,
     shoe_brand_id: listing.shoe_brand_id,
+    images: listing.images,
   }
 end
