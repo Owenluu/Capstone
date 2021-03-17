@@ -20,6 +20,7 @@ class Api::ListingsController < ApplicationController
       quantity: params["quantity"],
       location_id: params["location_id"],
       shoe_brand_id: params["shoe_brand_id"],
+      # image: params["image"],
     )
     if @listing.save
       render "show.json.jb"
