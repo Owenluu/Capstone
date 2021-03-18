@@ -20,13 +20,17 @@ class Api::ListingsController < ApplicationController
       quantity: params["quantity"],
       location_id: params["location_id"],
       shoe_brand_id: params["shoe_brand_id"],
-      # image: params["image"],
+      image: params["image_url"],
     )
-    if @listing.save
-      render "show.json.jb"
-    else
-      render json: { errors: @listing.errors.full_messages }, status: 422
-    end
+    # if @listing.save
+    # render "show.json.jb"
+    # else
+    #   render json: { errors: @listing.errors.full_messages }, status: 422
+    # end
+    @listing.save
+    Image.create(listing_id: @listing.id, image_url: params["image_url"])
+
+    render "show.json.jb"
   end
 
   def show
