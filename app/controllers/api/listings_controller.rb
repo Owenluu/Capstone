@@ -12,6 +12,8 @@ class Api::ListingsController < ApplicationController
   end
 
   def create
+    response = Cloudinary::Uploader.upload(params[:image], resource_type: :auto)
+    cloudinary_url = response["secure_url"]
     @listing = Listing.new(
       title: params["title"],
       description: params["description"],
@@ -20,7 +22,7 @@ class Api::ListingsController < ApplicationController
       quantity: params["quantity"],
       location_id: params["location_id"],
       shoe_brand_id: params["shoe_brand_id"],
-      image: params["image_url"],
+      image: cloudinary_url,
     )
     # if @listing.save
     # render "show.json.jb"

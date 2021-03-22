@@ -3,10 +3,15 @@
   title: @listing.title,
   description: @listing.description,
   user_id: @listing.user_id,
+  user_email: @listing.user.email,
+  user_first_name: @listing.user.first_name,
+  user_last_name: @listing.user.last_name,
+
   price: @listing.price,
   quantity: @listing.quantity,
   availability: @listing.availability,
   location_id: @listing.location_id,
   shoe_brand_id: @listing.shoe_brand_id,
   images: @listing.images,
+
 }
