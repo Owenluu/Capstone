@@ -20,4 +20,6 @@ Rails.application.routes.draw do
 
     post "/images" => "images#create"
   end
+
+  get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: "public/index.html")]] }
 end
