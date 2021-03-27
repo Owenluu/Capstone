@@ -35,6 +35,7 @@ Listing.create!(title: "Jordan 11 Retro Playoffs bred (2019)", description: "Dea
 Listing.create!(title: "Nike Air Yeezy 2 Red October", description: "Deadstock size 10", user_id: 1, price: 14000.00, quantity: 1, availability: "true", location_id: 1, shoe_brand_id: 1, image: "https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img01.jpg?auto=compress&q=90&dpr=2&updated_at=1606315975&fit=clip&fm=webp&ixlib=react-9.0.3&w=1246")
 Listing.create!(title: "Nike Air Yeezy 2 Solar Red", description: "Deadstock size 10", user_id: 2, price: 8000.00, quantity: 1, availability: "true", location_id: 2, shoe_brand_id: 1, image: "https://stockx-360.imgix.net/Nike-Air-Yeezy-2-NRG-Black-Solar-Red/Images/Nike-Air-Yeezy-2-NRG-Black-Solar-Red/Lv2/img01.jpg?auto=compress&q=90&dpr=2&updated_at=1606316293&fit=clip&fm=webp&ixlib=react-9.0.3&w=1246")
 Listing.create!(title: "Nike Air Fear Of God 1 Yellow", description: "Deadstock size 10.5", user_id: 3, price: 3445.00, quantity: 1, availability: "true", location_id: 3, shoe_brand_id: 1, image: "https://stockx-360.imgix.net/Nike-Air-Fear-Of-God-1-Yellow/Images/Nike-Air-Fear-Of-God-1-Yellow/Lv2/img01.jpg?auto=compress&q=90&dpr=2&updated_at=1608522086&fit=clip&fm=webp&ixlib=react-9.0.3&w=1246")
+# Listing.create!(title: "Crocs Classic Clog KFC", description: "Deadstock size 8", user_id: 3, price: 179.00, quantity: 1, availability: "true", location_id: 3, shoe_brand_id: 1, image: "")
 
 Category.create!(shoe_type: "Athletic")
 Category.create!(shoe_type: "Running")
